@@ -68,11 +68,91 @@ Coding Boot Camp (C) 2016. All Rights Reserved.
 <head>
 <meta charset-"utf-8">
 <title> Train Scheduler</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 </head>
 
 <body>
-<script src=""></script>
+<script src="assets/moment.js"></script>
+<script src="assets/app.js"></script>
+
+<div class="jumbotron">
+         <h1 class="text-center">Train Schedule</h1>
+     </div>
+
+     <div class="container schedule-container">
+          <div class="row">
+
+              <div class="col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+                   <div class="panel panel-primary">
+                        <div class="panel-heading">
+                             <h3 class="panel-title">Current Train Schedule</h3>
+                        </div>
+                        <div class="panel-body">
+
+                             <!-- Train input Form -->
+                        <table class="train-schedule">
+                             <tr>
+                                  <th class="col-xs-3">Train Name
+                                  </th>
+                                  <th class="col-xs-2">Destination
+                                  </th>
+                                  <th class="col-xs-2">Frequency (min)
+                                  </th>
+                                  <th class="col-xs-2">Next Arrival
+                                  </th>
+                                  <th class="col-xs-2">Minutes Away
+                                  </th>
+                             </tr>
+                        </table>
+
+                        </div>  
+                   </div> 
+              </div> 
+         </div> 
+    </div>  
+     <div class="container input-container">
+          <div class="row">
+
+              <!-- Sign-Up Panel-->
+              <div class="col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+                   <div class="panel panel-primary">
+                        <div class="panel-heading">
+                             <h3 class="panel-title">Add Train</h3>
+                        </div>
+                        <div class="panel-body">
+
+                             <!-- Sign-up Form (note the various input "types")-->
+                             <form role="form">
+                               <div class="form-group">
+                                 <label for="text">Train Name</label>
+                                 <input type="text" class="form-control" id="name-input">
+                               </div>
+                               <div class="form-group">
+                                 <label for="text">Destination</label>
+                                 <input type="text" class="form-control" id="destination-input">
+                               </div>
+                               <div class="form-group">
+                                 <label for="text">First Train Time (HH:mm - military time)</label>
+                                 <input type="text" class="form-control" id="first-train-time-input">
+                               </div>
+                               <div class="form-group">
+                                 <label for="comment">Frequency (min)</label>
+                                 <input type="text" class="form-control" id="frequency-input">
+                               </div>
+                               <button type="submit" class="btn btn-primary" id="add-train">Submit</button>
+                             </form>
+
+                        </div>  <!-- closes panel-body -->
+                   </div> <!-- closes panel-default -->
+              </div> <!-- closes col-lg-6 -->
+         </div> <!-- closes row -->
+    </div>  <!-- closes container -->
+
+
+
+
 </body>
+
 
 </html>
 
